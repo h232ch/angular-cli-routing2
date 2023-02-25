@@ -1,0 +1,25 @@
+<p>heores works!</p>
+
+
+
+<!--<a [routerLink]="['/hero', hero.id]">-->
+<!--  <span class="badge">{{ hero.id }}</span>{{ hero.name }}-->
+<!--</a>-->
+
+<div *ngFor="let hero of heroes">
+  <a [routerLink]="['/hero', hero.id]" >
+    <span class="badge">
+      {{ hero.id }}
+    </span>
+    <span>
+      {{ hero.name }}
+    </span>
+  </a>
+</div>
+
+
+<a [routerLink]="['/crisis-center', { foo: 'foo' }]">Crisis Center</a>
+
+
+<!--{{ hero.id }} - {{ hero.name }}-->
+<!--({{hero.isSecret ? 'secret' : 'public'}})-->
